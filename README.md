@@ -1,70 +1,114 @@
-# Getting Started with Create React App
+# Dice-Game-
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+1. **Display of Dice**: The application displays dice and their current values.
 
-In the project directory, you can run:
+2. **Rolling the Dice**: Users can roll the dice to obtain new random values.
 
-### `npm start`
+3. **Score Calculation**: The game automatically calculates the player's score based on the values of the dice.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+4. **Turn Management**: The game manages player turns, alternating between players after each roll.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+5. **Winner Display**: The game displays the winning player with the highest score.
 
-### `npm test`
+6. **Game Reset**: Users can reset the game to start a new round.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Tasks
 
-### `npm run build`
+To build this project, the following tasks were completed:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Set up a new React project using Create React App.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Created a main component (`Dice`) responsible for the overall game display.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Created a component (`Die`) to display a die and its value.
 
-### `npm run eject`
+4. Managed the state of the dice in the `Die` component using the `useState` hook.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. Implemented the dice rolling functionality by generating new random values for the dice in the `Die` component.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+6. Calculated the player's score based on the values of the dice and updated the score in the `Die` component.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+7. Implemented turn management by using a state variable to track the current player (Player 1 or Player 2) in the `Die` component.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+8. Alternated between players after each dice roll by updating the current player's state in the `Die` component.
 
-## Learn More
+9. Determined the winning player by comparing the scores of both players and displayed the result in the `Die` component.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+10. Added a reset button to reset the game by resetting the dice values, scores, and selecting a random starting player.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The game uses images of dice to display the scores and is developed using advanced React concepts such as functional components and hooks (useState, useEffect). Additionally, CSS styles have been added to enhance the visual appeal of the game.
 
-### Code Splitting
+Good luck with your creation of the dice game!
+Vous pouvez ajouter ce contenu dans un fichier nommé "README.md" à la racine de votre projet sur GitHub pour expliquer les caractéristiques et les tâches accomplies dans votre projet. Assurez-vous de personnaliser le README en fonction des détails spécifiques de votre projet.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+User
+si tu peut me le traduire en francais
+ChatGPT
+Bien sûr, voici la traduction en français du fichier README :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+markdown
+Copy code
+# Jeu de Dés
 
-### Advanced Configuration
+Il s'agit d'une application web simple qui simule un jeu de dés avec les fonctionnalités suivantes :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. **Affichage des Dés** : L'application affiche des dés et leurs valeurs actuelles.
 
-### Deployment
+2. **Lancer les Dés** : Les utilisateurs peuvent lancer les dés pour obtenir de nouvelles valeurs aléatoires.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+3. **Calcul du Score** : Le jeu calcule automatiquement le score du joueur en fonction des valeurs des dés.
 
-### `npm run build` fails to minify
+4. **Gestion des Tours** : Le jeu gère les tours des joueurs, en alternant entre les joueurs après chaque lancer.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+5. **Affichage du Gagnant** : Le jeu affiche le joueur gagnant avec le score le plus élevé.
+
+6. **Réinitialisation du Jeu** : Les utilisateurs peuvent réinitialiser le jeu pour commencer une nouvelle partie.
+
+## Tâches du Projet
+
+Pour construire ce projet, les tâches suivantes ont été accomplies :
+
+1. Configuration d'un nouveau projet React en utilisant Create React App.
+
+2. Création d'un composant principal (`Dice`) responsable de l'affichage global du jeu.
+
+3. Création d'un composant (`Die`) pour afficher un dé et sa valeur.
+
+4. Gestion de l'état des dés dans le composant `Die` en utilisant le hook `useState`.
+
+5. Implémentation de la fonctionnalité de lancer les dés en générant de nouvelles valeurs aléatoires pour les dés dans le composant `Die`.
+
+6. Calcul du score du joueur en utilisant les valeurs des dés et mise à jour du score dans le composant `Die`.
+
+8. Mise en place de la gestion des tours des joueurs en utilisant une variable d'état pour suivre le joueur actuel (Joueur 1 ou Joueur 2) dans le composant `Die`.
+
+9. Alternance entre les joueurs après chaque lancer de dés en mettant à jour la variable d'état du joueur actuel dans le composant `Die`.
+
+10. Détermination du joueur gagnant en comparant les scores des deux joueurs et affichage du résultat dans le composant `Die`.
+
+11. Ajout d'un bouton de réinitialisation pour remettre à zéro les valeurs des dés, les scores et choisir aléatoirement le joueur de départ.
+
+## Instructions pour l'utilisation du projet
+
+Pour consulter et exécuter ce projet localement, suivez ces étapes simples :
+
+### Clonez le projet sur votre ordinateur en utilisant la commande Git suivante :
+
+git clone https://github.com/votre-utilisateur/votre-projet.git
+Installez les dépendances en accédant au répertoire du projet et en exécutant la commande suivante :
+
+bash
+Copy code
+npm install
+Démarrer le serveur de développement en utilisant la commande :
+
+bash
+Copy code
+npm start
+Une fois le serveur de développement démarré, ouvrez un navigateur Web et accédez à votre url local comme (l'URL http://localhost:3000) pour voir le projet en cours d'exécution en local.
+
+Si vous avez des questions ou des commentaires, n'hésitez pas à les partager
