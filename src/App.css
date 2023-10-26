@@ -1,38 +1,156 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, sans-serif;
+  color: black;
+  background-color: rgb(255, 255, 255);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title-dice-game {
+  font-size: 25px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.dice {
+  display: flex;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 70%;
+  height: 30%;
+  margin: 10px auto;
+  border-radius: 5px;
+  box-shadow: 1px 1px 9px black;
+}
+
+.dices-main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.score {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.dice {
+  display: flex;
+  margin: 0px 40px;
+  max-width: 300px;
+  gap: 50px;
+  height: 50px;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.dice-image {
+  width: 120px;
+  height: 120px;
+  margin: 0 180px;
+}
+
+.dice-bloc {
+  /* margin-top: 20px; */
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.btn-roll-dice {
+  transition: 0.4s;
+}
+
+.btn-roll-dice:hover {
   color: white;
+  background-color: rgba(0, 0, 255, 0.429);
+  border: none;
+  box-shadow: 1px 1px 5px black;
 }
 
-.App-link {
-  color: #61dafb;
+.btn {
+  width: 240px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.505);
+  margin: 30px;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 25px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.dice-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 20px 0;
+}
+
+.img-state {
+  margin: 20px;
+}
+
+.winner-animation {
+  animation: winnerScale 0.6s infinite alternate;
+}
+
+@keyframes winnerScale {
+  0% {
+    transform: scale(1);
+    opacity: 1;
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    transform: scale(1.1);
+    color: rgba(0, 0, 0, 0.852);
+    opacity: 0.5;
+  }
+}
+
+@media (max-width: 1400px) {
+  .dices-main {
+    justify-content: center;
+  }
+
+  .dices-imgs {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .dice {
+    margin-top: 50px;
+  }
+
+  .dices-main {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .img-state {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .dice-image {
+    display: none;
+  }
+
+  .dices-main {
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 80px;
   }
 }
