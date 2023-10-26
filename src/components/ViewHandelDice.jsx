@@ -17,7 +17,6 @@ function ViewHandelDice({
   rollDice,
   resetGame,
 }) {
-  console.log(currentPlayer);
   return (
     <>
       <div className="dices-main">
@@ -68,6 +67,7 @@ function ViewHandelDice({
 
       <div className="dice-main-container"></div>
       <h1 className="title-dice-game">Game of Dice</h1>
+      {!winner && <h1 className="info-game">Score to expect : 50</h1>}
 
       <div className="dices-imgs">
         <img

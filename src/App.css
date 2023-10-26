@@ -10,7 +10,8 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
-.title-dice-game {
+.title-dice-game,
+.info-game {
   font-size: 25px;
 }
 
